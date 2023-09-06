@@ -1,0 +1,33 @@
+Name: Elena
+Questions:
+1. Assume you are in the index.html file, and want to edit the links in the navbar. Specifically,
+what would the path be to link to the about.html page? a. Answer: “/about.html”
+2. Assume you are in the index.html file, and want to apply CSS to the page. What would the path be to link to the index.css file?
+a. Answer: /css/index.css
+3. What element would you put that path in? (Give the full element). Where would it go in the index.html file?
+4. Find where the codepoetry2021.html file is located in the repo. What sub-directory (folder) is it in?
+a. Answer: projects
+5. Imagine you wanted to add a link back to the index.html file in the codepoetry2021.html file. What would the path to that file be?
+a. Answer: /../index.html
+6. What about applying some CSS – namely that same index.css from before. What would the path be to correctly link to that file, from the codepoetry2021.html file?
+a. Answer: /../css/index.css
+7. There’s a file called headshot somewhere in the repo. Where is it? a. Answer: assets
+8. What would the path be to add that headshot file to the index.html file? What would the full element be? Where would it go in the index.html file?
+9. The contact.html page is a good place to add external links. What would the path be to add a link to the front page of the New York Times? What type of path is this?
+10. What is going on in the _data sub-directory? Namely, what type of files are there (what is a .yml file)? Where on Anthony’s site do you think the contents of those files display (take a guess, based on the names of the files)? You might need to look at Anthony’s actual website.
+a. Element: style element
+ b. Location in HTML file: <head>
+ 
+a. Path: assets/headshots/matisseheadshot.png
+ b. Full Element: <img src=”path”>
+ c. Location in HTML file: in the body so it shows up on the page
+ a. Path: http://www.nytimes.com
+ b. What type of path: absolute
+ a. What is a .yml file: type of data file that holds info we can read and computers can
+ understand
+ b. Where is the data in those files displayed: within the file that is linked/referenced
+ 
+11. What about the _includes sub-directory? What do you think the files in that sub-directory accomplish, based on their titles? You might need to look at Anthony’s actual website.
+a. Where do the files in the _includes sub-directory appear: on the home page of the
+ website
+ 
