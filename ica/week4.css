@@ -1,0 +1,21 @@
+html { 
+font-size:50px;
+
+}
+
+h1 {
+    color:hotpink;
+}
+
+border-bottom-style: dotted;
+color: purple;
+
+
+.test-class, .test-class-2 {
+    color: purple;
+   
+}
+
+#test-id {
+    color:green;
+}
