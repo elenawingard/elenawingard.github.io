@@ -25,6 +25,7 @@ body {
 
 .card header,.card footer {
     height: 3.125em;
+    content height: 1.875em;
     padding-top: 0.625em;
     padding-right: 0.625em;
     padding-bottom: 0.625em;
