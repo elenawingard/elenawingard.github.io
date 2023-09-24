@@ -21,11 +21,34 @@ body {
     border-radius: 1.5em;
   }
 
+/*Main business card contents styles*/
+.card article img {
+  max-height: 100%;
+  float: right;
+}
+
+h2, p {
+  margin: 0cm;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+article {
+  height: 7.5em;
+  background-color: transparent black(0,0,0,.5);
+ 
+}
+
+article p {
+  align-content: h2, footer;
+}
+
 /*Header and footer styles*/
 
 .card header,.card footer {
     height: 3.125em;
-    content height: 1.875em;
     padding-top: 0.625em;
     padding-right: 0.625em;
     padding-bottom: 0.625em;
@@ -43,16 +66,10 @@ body {
     border-radius: 0 0 1.5em 1.5em;
   }
 
-  /*Main business card contents styles*/
-  .card article img {
-    max-height: 100%;
-    float: right;
-  }
-
-  h2, p {
-    margin: 0cm;
-  }
-
-article {
-    height: 7.5em;
+.card footer p {
+  font-size: 0.9375em;
+  text-align: center;
+  float: 0.625em;
+  
 }
+  
