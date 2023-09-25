@@ -1,5 +1,4 @@
 /*General page styles*/
-
 body {
     margin: 0;
   }
@@ -21,55 +20,75 @@ body {
     border-radius: 1.5em;
   }
 
+/*Header and footer styles*/
+.card header,.card footer {
+  height: 3em;
+  padding: 1em;
+}
+
 /*Main business card contents styles*/
 .card article img {
   max-height: 100%;
   float: right;
+ 
 }
 
-h2, p {
-  margin: 0cm;
+h2 p {
+margin: 0em;
+}
+
+.card article {
+  height: 12em;
+  background-color: red;
+  padding-left: 1em;
+  color: #ccc;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  border-radius: 0em 0em 0em 0em;
 }
 
 h2 {
-  font-size: 1.25em;
-}
-
-article {
-  height: 7.5em;
-  background-color: transparent black(0,0,0,.5);
+  font-size: 2em;
+  line-height: 1em;
  
 }
 
 article p {
-  align-content: h2, footer;
+  padding-top: 1em;
 }
 
-/*Header and footer styles*/
-
-.card header,.card footer {
-    height: 3.125em;
-    padding-top: 0.625em;
-    padding-right: 0.625em;
-    padding-bottom: 0.625em;
-    padding-left: 0.625em;
-    
-}
-
-.card header {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
-    border-radius: 1.5em 1.5em 0 0;
-  }
-
-.card footer {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-    border-radius: 0 0 1.5em 1.5em;
-  }
-
-.card footer p {
-  font-size: 0.9375em;
+footer p {
+  font-size: 1.5em;
+  line-height: 0em;
   text-align: center;
-  float: 0.625em;
-  
 }
-  
+
+/*Elena Card*/
+.elenaCard {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: #fcdcf9;
+  border: 0.2em solid #062766;
+  border-radius: 1.5em;
+}
+
+.elenaCard header, .elenaCard footer {
+  height: 3em;
+  padding: 1em;
+}
+
+.elenaCard article img {
+  max-height: 100%;
+  float:right;
+}
+
+.elenaCard article {
+  height: 12em;
+  padding-left: 1em;
+  background-color:#fcdcf9;
+  color:#062766;
+  font-family: 'Times New Roman';
+  background-image: linear-gradient(rgba(0,0,0,0.13), rgba(0,0,0,0.13));
+  border-radius: 0em 0em 0em 0em;
+}
+
