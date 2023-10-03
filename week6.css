@@ -1,0 +1,26 @@
+html {
+    font-size: 100px;
+}
+
+body {
+    background-color: white;
+}
+
+.box {
+    border: 2px solid lightblue;
+}
+
+/* this is for the text's box only
+padding order: top right bottom left
+margin order: top right bottom left */
+.text, .text2 {
+    color: white;
+    border: 1rem solid pink;
+    padding: 1em;
+    background: lightblue;
+    margin: 0px 0px 0px 0px;
+}
+
+/* ems and rems
+view width and height
+percentages */
