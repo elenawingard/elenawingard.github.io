@@ -1,0 +1,89 @@
+
+/* divs and media queries:
+divs are normal flow
+they can be responsive (change according to 
+    adjustments w/ page size
+but instead of divs we want to use a diff set of 
+    rules for each page
+we do this with media queries (like @media screen)
+*/
+
+/* can use classes more than once but cannot use ids
+    more than once */
+
+/* background color using media print:
+the background color will change depending on the screen 
+    being used (the screen's size)
+the background will be pink unless the screen is larger 
+    than 900px, and then it will be blue
+can also adjust the height
+can also use:
+    @media print {
+        body { 
+        background-color: rgb(67, 222, 243);
+     }
+    }
+*/
+
+body {
+    background-color: rgb(67, 222, 243);
+}
+
+/* playing around with the divs: 
+padding pushes the border away
+margin pushes other elements away
+everything in the div will happen no matter what and
+    will stay the same regardless of screen
+*/
+
+/* vw is view width aka size of the screen */
+
+div {
+    background-color: rgb(244, 227, 233);
+    color: yellow;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 5vw;
+    margin: 2.5vw;
+    border:rgb(201, 188, 251) 5px solid;
+}
+
+/* using div-wrapper:
+in the html we'll put a flexbox on the page that
+    accounts for when we are in a certain page, it will 
+    stack them vertically or horizontally
+surround the divs in a div wrapper
+need to call a class using .div wrapper
+anything that has this class is now a flexbox
+can use display: flex or display: grid
+*/
+
+/* using flexbox:
+display: flex
+flexbox is one-dimensional
+it's either thinking about rows or columns */
+
+/* using grid:
+display: grid, then the line after grid-template-columns/rows
+grid is where we can make things that look like tables 
+*/
+
+.div-wrapper {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1 fr, 1fr;
+
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: rgb(250, 70, 130);
+    }
+}
+
+
+.div-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
