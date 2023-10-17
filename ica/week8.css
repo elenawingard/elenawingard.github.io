@@ -1,0 +1,82 @@
+body {
+    background-color: lightgreen;
+}
+
+p { 
+    font-size: 5vw;
+}
+
+/* basic hover animation
+use an id element - in this case, delay
+these are denoted as #delay in the css
+but if using a class you need .delay instead
+whatever has this id will follow this animation
+our animation is called slidein
+*/
+
+.delay {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* keyframes
+having keyframes adds movement depending on the % 
+otherwise, nothing will happen 
+margin left 100% slides it all the way to the right to the screen
+from means at time 0 it starts 
+to is whatever the duration is
+*/
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    50% {
+        color: pink;
+        font-size: 50vw;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.getbig {
+    animation: 3s infinite alternate getbig;
+}
+
+@keyframes getbig {
+    from {
+        font-size: 1vw;
+        color: lightblue
+    }
+
+    to {
+        font-size: 100vw;
+        color: lightcoral;
+    }
+}
+
+/* this will change anything with the id element hover */
+
+#hover {
+    font-size: 5vw;
+    transition-property: font-size;
+    transition-duration: 3s;
+    transition-delay: 8.25s;
+    animation: 3s infinite alternate slidein;
+}
+
+/* write pseudoclass of hover 
+this changes the font to grow*/
+
+#hover:hover {
+    font-size: 15vw;
+    color: purple;
+    background-color: lightblue;
+}
+
