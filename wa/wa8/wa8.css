@@ -1,0 +1,77 @@
+h1 {
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(27, 83, 121);
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(250, 87, 133);
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+img{
+    width:250px;
+    height: 250px;
+}
+
+
+#red-ball{
+    background-color: white;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:10vw;
+    top:0;
+    animation: 10s infinite alternate movement;
+    transition-duration: 10s;
+}
+
+
+#red-ball:hover {
+    background-color: rgb(250, 87, 133);
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes movement {
+    from {
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+
+    50% {
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}
+
+
+img:hover {
+    content: url(grinch.jpg);
+}
+
+nav:hover {
+background-color: rgb(27, 83, 121);
+}
