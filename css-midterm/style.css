@@ -1,0 +1,94 @@
+h1 {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-size: 15px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 83, 121);
+}
+
+/* bar with each event name */
+/* make something happen when hovered/clicked */
+
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9{
+    color: white;
+
+}
+
+#div1:hover {
+    background-color: palevioletred;
+}
+
+#div2:hover {
+    background-color: palevioletred;
+}
+
+#div3:hover {
+    background-color: palevioletred;
+}
+
+#div4:hover {
+    background-color: palevioletred;
+}
+
+#div5:hover {
+    background-color: palevioletred;
+}
+
+#div6:hover {
+    background-color: palevioletred;
+}
+
+#div7:hover {
+    background-color: palevioletred;
+}
+
+#div8:hover {
+    background-color: palevioletred;
+}
+
+#div9:hover {
+    background-color: palevioletred;
+}
+
+
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: absolute;
+    background-color: rgb(250, 87, 133);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+
+nav a {
+    width:absolute;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* be able to link each concert to its information */
+
