@@ -3,6 +3,7 @@ h1 {
     font-size: 50px;
     text-align: center;
     display: flex;
+    position: sticky;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 /* bar with each event name */
-/* make something happen when hovered/clicked */
+/* when clicked --> link to the section on the page */
 
 #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9{
     color: white;
