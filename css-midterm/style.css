@@ -1,32 +1,54 @@
-h1 {
-    color: rgb(15, 42, 82);
-    font-size: 50px;
+/* need to add media screen for large and small screens */
+
+#h1 {
+    color: white;
+    font-size: 33px;
     text-align: center;
-    display: flex;
-    font-style: italic;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-style: oblique;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
-#intro {
-    color: rgb(15, 42, 82);
-    text-align: center;
+#year {
+    font-size: 26px;
 }
 
+#intro {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+#intro1 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-style: oblique;
+    border-style: solid;
+    padding: 0px;
+
+}
 body {
     font-size: 15px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #401E36;
+    background-image: url(symphony.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 704px;
+    background-position: top center;
 }
+
 
 /* bar with each event name */
 /* when clicked --> link to the section on the page */
 
 #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9{
     color: white;
-}
+    }
 
 #div1:hover {
     background-color: rgb(210, 221, 238);
@@ -71,7 +93,7 @@ nav {
     justify-content: space-between;
     height: absolute;
     width: absolute;
-    background-color: rgb(15, 42, 82);
+    background-color: #C29173;
 }
 
 nav ul {
@@ -96,14 +118,14 @@ nav a {
 /* be able to link each concert to its information */
 
 #events {
-    color: rgb(15, 42, 82);
+    color: #C29173;
     font-size: 15px;
     text-align: left;
     font-style: italic;
 }
 
 #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
-    color: rgb(15, 42, 82);
+    color: #C29173;
     font-size: 8px;
     text-align: left;
 }
