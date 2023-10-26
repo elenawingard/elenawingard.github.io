@@ -1,0 +1,31 @@
+#e1, #e2, #e3, #e4, #e5, #e6, #e7, #e8, #e9 {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+
+}
+
+
+body {
+    background-color: #401E36;
+}
+
+h2 {
+font-size: 37px;
+text-align: center;
+font-style: oblique;
+}
+
+
+#date {
+    font-size: 13px;
+    text-align: center;
+}
+
+#end {
+    font-size: 8px;
+    color: white;
+    text-align: center;
+}
