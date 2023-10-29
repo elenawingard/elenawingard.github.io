@@ -1,12 +1,14 @@
+@media screen and (max-width: 1500px) {
+
 #e1, #e2, #e3, #e4, #e5, #e6, #e7, #e8, #e9 {
     color: white;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     padding: 5em;
+    text-size-adjust: none;
 
 }
-
 
 body {
     background-color: #401E36;
@@ -16,12 +18,14 @@ h2 {
 font-size: 37px;
 text-align: center;
 font-style: oblique;
+text-size-adjust: none;
 }
 
 
 #date {
     font-size: 13px;
     text-align: center;
+    text-size-adjust: none;
 }
 
 #end {
@@ -29,3 +33,76 @@ font-style: oblique;
     color: white;
     text-align: center;
 }
+
+.button {
+    background-color: #C29173;
+    font-size: 8px;
+    width: 50px;
+    height: 18px;
+    padding: 0px;
+    border-radius: 3%;
+    display: grid;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #401E36;
+}
+
+    }
+
+
+@media screen and (max-width: 400px) {
+
+
+#e1, #e2, #e3, #e4, #e5, #e6, #e7, #e8, #e9 {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    text-size-adjust: none;
+
+}
+
+body {
+    background-color: #401E36;
+}
+
+h2 {
+font-size: 37px;
+text-align: center;
+font-style: oblique;
+text-size-adjust: none;
+}
+
+#date {
+    font-size: 13px;
+    text-align: center;
+    text-size-adjust: none;
+}
+
+#end {
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    text-size-adjust: none;
+}
+
+.button {
+    background-color: #C29173;
+    font-size: 8px;
+    width: 50px;
+    height: 18px;
+    padding: 0px;
+    border-radius: 3%;
+    display: grid;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #401E36;
+}
+
+    }
+
