@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button, div {
+            font-family: "helvetica neue", helvetica, sans-serif;
+            background-color: teal;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px rgb(0, 0, 200 / 0.4);
+            cursor: pointer;
+            padding: 3px 10px;
+            border: 2px solid rgb(200, 200, 0 / 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button">Player 1: Elena</button>
+    <div id="press" type="button">Press Me</button>
+
+    <script>
+        // "const" or "let" comes before naming the variable
+        // from the html doc, find the thing "button" 
+        const button = document.querySelector("button");
+        const press = document.getElementById("press");
+
+        // it'll look for a click and run the function "updateName" 
+        button.addEventListener('click', updateName);
+        press.addEventListener('click', updateName);
+
+        function updateName() {
+        // could do this instead: let name = prompt("Enter a new name");
+        // now when pressed the name will be "10"
+            let name = 10;
+            console.log("the function ran correctly");
+            console.log(name);
+        // it will always say "Player 1" and then it'll use whatever name is entered when in the browser
+        // if using "button" and not "div": button.textContent = `Player 1: ${name}`;
+        press.innerHTML = `<h1>Hello!</h1>`
+        }
+
+    </script>
+</body>
+</html>
