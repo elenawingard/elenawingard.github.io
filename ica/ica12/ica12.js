@@ -4,6 +4,7 @@ const answerBtn = document.querySelector('#js-answer').addEventListener('click',
 
  // this display quote needs a parameter 
  const questionTxt = document.querySelector('#js-quote-text');
+ 
  let answerTxt = document.querySelector('#js-answer-text');
 
 let answer = '';
