@@ -9,6 +9,7 @@ const answerBtn = document.querySelector('#js-answer').addEventListener('click',
 
 let answer = '';
 
+
 const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
 // function get quote 
