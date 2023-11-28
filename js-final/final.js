@@ -1,39 +1,39 @@
 // other idea: every time someone tries to type a number x, have it return x + 1, etc.
 
 
-// maybe search up how to make a spinning thing that returns an answer
 
 
-const newBtn = document.querySelector('#js-new-button').addEventListener('click', getNumber);
+const wheel = document.getElementById('wheel');
+const numberTable = document.getElementById('numberTable');
+const row = document.getElementById('row');
 
-const canvas = document.querySelector('canvas');
-const ctx = canvas.getContext('2d');
+function spinWheel() {
+    const rotation = Math.floor(Math.random()*360);
+    wheel.style.transform = `rotate(${rotation}deg)`;
+    
+    // make the wheel stop and then reset
+    setTimeout(() => {
+        wheel.style.transform = 'rotate(0deg)';
+    }, 5000);
 
-const width = (canvas.width = window.innerWidth);
-const height = (canvas.height = window.innerHeight);
+    // randomize the number each time it is returned
+    const randomNumber = Math.floor(Math.random()* 100);
+    const emptyCell = Array.from(row.children).find(cell => cell.innerHTML === '');
+        if (emptyCell) {
+        emptyCell.innerHTML = randomNumber;
+        }
 
-// this will be the thing that spins 
-// needs to spin clockwise...
-// ...fast for 2 secs, slower for 1.5 secs, then it slows down...
+// fast for 2 secs, slower for 1.5 secs, then it slows down...
 // ... til it stops and reveals the number
-class wheel {
-    constructor(x, y, velX, velY, color, size) {
-        this.x = x;
-        this.y = y;
-        this.velX = velX;
-        this.velY = velY;
-        this.color = color;
-        this.size = size;
-    }
+}
 
-    draw() {
-        ctx.beginPath();
-        ctx.fillStyle = this.color;
-        ctx.arc(this.x, this.y, this.size, 0, 2*Math.PI);
-        ctx.fill();
-    }
 
-  //  update() { ????
-
+function saveNumber() {
+    // want the numbers to be saved from left to right
+    const randomNumber = Math.floor(Math.random()*100);
+    const emptyCell = Array.from(row.children).find(cell => cell.innerHTML ==='');
+        if (emptyCell) {
+            emptyCell.innerHTML = randomNumber;
+        }
 }
 
