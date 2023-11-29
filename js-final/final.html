@@ -6,68 +6,53 @@
     <title>Phone Number Carnival</title>
     <link rel="stylesheet" href="final.css">
 </head>
+<h1>Spin the wheel to input your phone number</h1>
 <body>
 
-<h1>Spin the wheel to input your phone number</h1>
 
-<section class="controls" >
-<button type="button" id="js-new-button" class="new-number button">
-    SPIN
-  </button>
+<div id="wheel-container">
+    <button id="spin">Spin</button>
+    <button id="save">Save</button>
+    </div>
+    <div id="numbers-container"></div>
 
 
-  
-</section>
+    <div id="wheel">
+        <!-- Stripes representing numbers 0 to 9 -->
+        <div class="stripe" style="transform: rotate(0deg);">
+          <div class="number">0</div>
+        </div>
+        <div class="stripe" style="transform: rotate(40deg);">
+          <div class="number">1</div>
+        </div>
+        <div class="stripe" style="transform: rotate(80deg);">
+          <div class="number">2</div>
+        </div>
+        <div class="stripe" style="transform: rotate(120deg);">
+          <div class="number">3</div>
+        </div>
+        <div class="stripe" style="transform: rotate(160deg);">
+          <div class="number">4</div>
+        </div>
+        <div class="stripe" style="transform: rotate(200deg);">
+          <div class="number">5</div>
+        </div>
+        <div class="stripe" style="transform: rotate(240deg);">
+          <div class="number">6</div>
+        </div>
+        <div class="stripe" style="transform: rotate(280deg);">
+          <div class="number">7</div>
+        </div>
+        <div class="stripe" style="transform: rotate(320deg);">
+          <div class="number">8</div>
+        </div>
+        <div class="stripe" style="transform: rotate(360deg);">
+          <div class="number">9</div>
+        </div>
+      </div>
 
-<div id="wheel">
-
-    <div class="stripe" style="transform: rotate(0deg);">
-    <div class="number">0</div>
-
-    <div class="stripe" style="transform: rotate(40deg);">
-    <div class="number">1</div>
-
-    <div class="stripe" style="transform: rotate(80deg);">
-    <div class="number">2</div>
-
-    <div class="stripe" style="transform: rotate(120deg);">
-    <div class="number">3</div>
-
-    <div class="stripe" style="transform: rotate(160deg);">
-    <div class="number">4</div>
-
-    <div class="stripe" style="transform: rotate(200deg);">
-    <div class="number">5</div>
-
-    <div class="stripe" style="transform: rotate(240deg);">
-    <div class="number">6</div>
-
-    <div class="stripe" style="transform: rotate(280deg);">
-    <div class="number">7</div>
-
-    <div class="stripe" style="transform: rotate(320deg);">
-    <div class="number">8</div>
-
-    <div class="stripe" style="transform: rotate(360deg);">
-    <div class="number">9</div>
-
-</div>
-
-</div>
-
-<button onclick="spinWheel()">Spin</button>
-<button onclick="saveNumber()">Save</button>
-
-<div id="numberTable">
-    <table>
-        <tr id="row">
-            <td></td><td></td><td></td>
-            <td></td><td></td><td></td>
-            <td></td><td></td><td></td>
-        </tr>
-    </table>
-</div>
-
+    <button onclick="spinWheel()">Spin</button>
+    <button onclick="saveNumber()">Save</button>
 
 
     <script src="final.js"></script>
