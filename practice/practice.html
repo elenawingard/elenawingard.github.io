@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    #wheel-container {
+      position: relative;
+    }
+
+    #wheel {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(
+        from 0deg,
+        #ff0000 0deg 18deg,
+        #fff 18deg 36deg,
+        #ff0000 36deg 54deg,
+        #fff 54deg 72deg,
+        #ff0000 72deg 90deg,
+        #fff 90deg 108deg,
+        #ff0000 108deg 126deg,
+        #fff 126deg 144deg,
+        #ff0000 144deg 162deg,
+        #fff 162deg 180deg,
+        #ff0000 180deg 198deg
+      );
+      animation: spin 5s ease-out 1 forwards;
+    }
+
+    .pin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0deg);
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #number-container {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .number-slot {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 20px;
+      font-size: 16px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <title>Spinning Wheel</title>
+</head>
+<body>
+  <div id="wheel-container">
+    <div id="wheel">
+      <!-- Pinstripes with numbers -->
+      <div class="pin">0</div>
+      <div class="pin">1</div>
+      <div class="pin">2</div>
+      <div class="pin">3</div>
+      <div class="pin">4</div>
+      <div class="pin">5</div>
+      <div class="pin">6</div>
+      <div class="pin">7</div>
+      <div class="pin">8</div>
+      <div class="pin">9</div>
+    </div>
+  </div>
+
+  <div id="number-container">
+    <!-- Number slots for saving -->
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+  </div>
+
+  <button onclick="spinWheel()">Spin</button>
+  <button onclick="saveNumber()">Save</button>
+
+  <script>
+    let currentNumber = null;
+
+    function spinWheel() {
+      // Enable the "spin" button only if the wheel is not spinning
+      const spinButton = document.querySelector('button:first-of-type');
+      if (!spinButton.disabled) {
+        spinButton.disabled = true;
+
+        // Randomly choose a number between 0 and 9
+        const randomDegree = Math.floor(Math.random() * 360);
+
+        // Set the final rotation based on the random number
+        const finalRotation = 360 * 5 + randomDegree;
+
+        // Apply the rotation to the wheel
+        const wheel = document.getElementById('wheel');
+        wheel.style.animation = `spin 5s ease-out 1 forwards`;
+        wheel.style.transform = `rotate(${finalRotation}deg)`;
+
+        // Find the pin number where the wheel stops
+        currentNumber = Math.floor((finalRotation % 360) / 36);
+      }
+    }
+
+    function saveNumber() {
+      if (currentNumber !== null) {
+        const numberSlots = document.querySelectorAll('.number-slot');
+        for (const slot of numberSlots) {
+          if (slot.innerText === '') {
+            slot.innerText = currentNumber;
+            break;
+          }
+        }
+
+        // Reset the currentNumber after saving
+        currentNumber = null;
+        // Enable the "spin" button after saving
+        document.querySelector('button:first-of-type').disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -9,50 +9,26 @@
 <h1>Spin the wheel to input your phone number</h1>
 <body>
 
-
-<div id="wheel-container">
-    <button id="spin">Spin</button>
-    <button id="save">Save</button>
+<div id="stripe" class ="stripe">
+  <div id="numbers" class="numbers">
+    <div class="even">
+      <span class="span1">0</span>
+      <span class="span2">2</span>
+      <span class="span3">4</span>
+      <span class="span4">6</span>
+      <span class="span5">8</span>
     </div>
-    <div id="numbers-container"></div>
-
-
-    <div id="wheel">
-        <!-- Stripes representing numbers 0 to 9 -->
-        <div class="stripe" style="transform: rotate(0deg);">
-          <div class="number">0</div>
-        </div>
-        <div class="stripe" style="transform: rotate(40deg);">
-          <div class="number">1</div>
-        </div>
-        <div class="stripe" style="transform: rotate(80deg);">
-          <div class="number">2</div>
-        </div>
-        <div class="stripe" style="transform: rotate(120deg);">
-          <div class="number">3</div>
-        </div>
-        <div class="stripe" style="transform: rotate(160deg);">
-          <div class="number">4</div>
-        </div>
-        <div class="stripe" style="transform: rotate(200deg);">
-          <div class="number">5</div>
-        </div>
-        <div class="stripe" style="transform: rotate(240deg);">
-          <div class="number">6</div>
-        </div>
-        <div class="stripe" style="transform: rotate(280deg);">
-          <div class="number">7</div>
-        </div>
-        <div class="stripe" style="transform: rotate(320deg);">
-          <div class="number">8</div>
-        </div>
-        <div class="stripe" style="transform: rotate(360deg);">
-          <div class="number">9</div>
-        </div>
-      </div>
-
-    <button onclick="spinWheel()">Spin</button>
-    <button onclick="saveNumber()">Save</button>
+    <div class="odd">
+      <span class="span6">1</span>
+      <span class="span7">3</span>
+      <span class="span8">5</span>
+      <span class="span9">7</span>
+      <span class="span10">9</span>
+    </div>
+  </div>
+  <button class="spin" onclick="rotateFunction()">Spin</button>
+  <!-- <button class="save" onclick="?????">Save</button> -->
+</div>
 
 
     <script src="final.js"></script>
