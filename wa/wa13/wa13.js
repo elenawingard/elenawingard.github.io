@@ -67,22 +67,26 @@ console.log(totalSalary);
 
 // problem 5
 let temp = 0;
-for (let i = 0; i < companyDetails.employees.employees.length; i++) {
-    if (companyDetails.employees.employees[i].RaiseEligible === "True") {
-        temp = companyDetails.employees.employees[i].Salary * .1;
-        companyDetails.employees.employees[i].Salary += temp;
-        companyDetails.employees.employees.RaiseEligible = "False";
+for (let i = 0; i < companyDetails.Employees.employees.length; i++) {
+    if (companyDetails.Employees.employees[i].RaiseEligible === "True") {
+        temp = companyDetails.Employees.employees[i].Salary * .1;
+        companyDetails.Employees.employees[i].Salary += temp;
+        companyDetails.Employees.employees.RaiseEligible = "False";
     }
 }
 
 console.log("Problem 5:")
-console.log(companyDetails.employees.employees);
+console.log(companyDetails.Employees.employees);
 
 // problem 6
-companyDetails.employees.employees.push (
-    {
-        "Work from Home":['Anna', 'Sam']
-    });
+const arr = ['Anna', 'Sam'];
+for(let i = 0; i < employeeDetails.employees.length; i++)
+    if(arr.includes(employeeDetails.employees[i].Name)) {
+        employeeDetails.employees[i].wfh = "True";
+    }
+    else {
+        employeeDetails.employees[i].wfh = "False";
+    }
 
 console.log("Problem 6:")
-console.log(companyDetails.Employees.employees);
+console.log(employeeDetails.employees);
