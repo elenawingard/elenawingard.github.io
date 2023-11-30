@@ -67,16 +67,16 @@ console.log(totalSalary);
 
 // problem 5
 let temp = 0;
-for (let i = 0; i < companyDetails.Employees.employees.length; i++) {
-    if (companyDetails.Employees.employees[i].RaiseEligible === "True") {
-        temp = companyDetails.Employees.employees[i].Salary * .1;
-        companyDetails.Employees.employees[i].Salary += temp;
-        companyDetails.Employees.employees.RaiseEligible = "False";
+for (let i = 0; i < companyDetails.employees.employees.length; i++) {
+    if (companyDetails.employees.employees[i].RaiseEligible === "True") {
+        temp = companyDetails.employees.employees[i].Salary * .1;
+        companyDetails.employees.employees[i].Salary += temp;
+        companyDetails.employees.employees.RaiseEligible = "False";
     }
 }
 
 console.log("Problem 5:")
-console.log(companyDetails.Employees.employees);
+console.log(companyDetails.employees.employees);
 
 // problem 6
 const arr = ['Anna', 'Sam'];
