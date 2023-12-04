@@ -5,53 +5,165 @@
 /* numbers will range from 0 to 9 --- make them random when spin is pressed */
 /* when phone number is input as desired, have another screen pop up or something (scary clown?) */
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  outline: none;
-}
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   letter-spacing: -1px;
   position: absolute;
+  align-items: center;
+  top: 30px;
   margin: 0;
- 
+  border: 4px solid black;
+  background-color: red;
 }
 
 body {
-    background-color: red;
+    background-color: lightblue;
     display: flex;
     justify-content: center;
-   /*  align-items: center; */
+    align-items: center; 
     height: 100vh;
     margin: 0;
     overflow: hidden;
 }
 
+/* #stripes { */
+#wheel-container {
+  position: absolute;
+  align-items: center;
+}
 
+/* #numbers { */
+.wheel {
+  position: absolute;
+  align-items: center;
+  top: 150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: spin 5s ease-out 1 forwards;
+  /* background: conic-gradient(
+      from 0deg,
+      red 0deg 18deg,
+      white 18deg 36deg,
+      red 36deg 54deg,
+      white 54deg 72deg,
+      red 72deg 90deg,
+      white 90deg 108deg,
+      red 108deg 126deg,
+      white 126deg 144deg,
+      red 162deg 180deg,
+      white 180deg 198deg
+    );
+    */
+  }
 
-.stripe {
-  position: relative;
-  width: 500px;
-  height: 500px;
+#result-container {
+  font-size: 20px;
+  color: blanchedalmond;
+  text-align: center;
+  margin-top: 20px;
 }
 
 
-.stripe:after {
+#number-container {
+  display: flex;
+  margin-top: 500px;
+}
+
+.number-slot {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 0px;
+  cursor: pointer;
+  align-items: center;
+  display: absolute;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid lightblue;
+  background-color: blanchedalmond;
+  color: black;
+  box-shadow: 0 5px 20px black;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.save {
+  position: absolute;
+  align-items: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 4px solid lightblue;
+  background-color: blanchedalmond;
+  color: black;
+  box-shadow: 0 5px 20px black;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+/* .stripe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+/* .stripe:after {
   position: absolute;
   content: '';
   width: 32px;
   height: 32px;
-  /* background: add pic of arrow*/
+  background: add pic of arrow
   right: -30px;
   top: 50%;
   transform: translateY(-50%);
 }
+*/
 
-.numbers {
+/* .numbers {
   width: 100%;
   height: 100%;
   position: relative;
@@ -61,121 +173,4 @@ body {
   overflow: hidden;
   
 }
-
-span {
-  width: 50%;
-  height: 50%;
-  display: inline-block;
-  position: absolute;
-  font-size: 24px;
-  
-  
-}
-
-.span1 {
-  clip-path: polygon(0 92%, 100% 50%, 0 8%);
-  background-color: white;
-  top: 120px;
-  left: 0;
-}
-
-.span2 {
-  clip-path: polygon(100% 92%, 0 50%, 100% 8%);
-  background-color: white;
-  top: 120px;
-  right: 0;
-}
-
-.span3 {
-  clip-path: polygon(50% 0, 8% 100%, 92% 100%);
-  background-color: white;
-  bottom: 0;
-  left: 120px;
-}
-
-.span4 {
-  clip-path: polygon(50% 100%, 92% 0, 8% 0);
-  background-color: white;
-  top: 0;
-  left: 120px;
-}
-
-.span5 {
-  clip-path: polygon(0 50%, 25% 92%, 50% 50%, 25% 8%);
-  background-color: white;
-  top: 60px;
-  left: 75%;
-}
-
-.span6 {
-  clip-path: polygon(50% 8%, 25% 50%, 50% 92%, 75% 50%);
-  background-color: rgb(242, 255, 0);
-  top: 60px;
-  left: 75%;
-}
-
-.span7 {
-  clip-path: polygon(75% 92%, 100% 50%, 75% 8%);
-  background-color: rgb(242, 255, 0);
-  top: 180px;
-  left: 0;
-}
-
-.span8 {
-  clip-path: polygon(100% 50%, 75% 92%, 100% 8%);
-  background-color: rgb(242, 255, 0);
-  top: 180px;
-  right: 0;
-}
-
-.span9 {
-  clip-path: polygon(50% 0%, 25% 8%, 75% 8%);
-  background-color: rgb(242, 255, 0);
-  bottom: 60px;
-  left: 25%;
-}
-
-.span10 {
-  clip-path: polygon(50% 100%, 75% 92%, 25% 92%);
-  background-color: rgb(242, 255, 0);
-  bottom: 60px;
-  left: 75%;
-}
-
-
-
-.spin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 4px solid black;
-  background-color: aqua;
-  color: black;
-  box-shadow: 0 5px 20px black;
-  font-weight: bold;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.spin:active {
-  width: 70px;
-  height: 70px;
-  font-size: 20px;
-}
-
-/* .numbers.animate:after {
-  animation: animateArrow 0.7s ease infinite;
-}
-
-
-@keyframes animateArrow {
-  50% {
-    right: -40px;
-  }
-}
 */
-

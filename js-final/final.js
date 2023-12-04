@@ -2,17 +2,44 @@
 
 // or do "pick a random box"
 
+let currentNumber = null;
 
-function rotateFunction() {
-    var min = 1024;
-    var max = 9999;
-    var deg = Math.floor(Math.random() * (max - min)) + min;
-    document.getElementById('numbers').style.transform ="rotate("+deg+"deg)";
+
+function spinWheel () {
+   const spinButton = document.querySelector('.spin');
+   if (!spinButton.disabled) {
+    spinButton.disabled = true;
+
+    const randomDegree = Math.floor(Math.random() * 360);
+    const finalRotation = 360 * 5 + randomDegree;
+    const numbers = document.getElementById('numbers');
+    numbers.style.animation = `spin 5s ease-out 1 forwards`;
+    numbers.style.transform = `rotate(${finalRotation}deg)`;
+
+
+    currentNumber = Math.floor((finalRotation % 360) / 36);
+
+    const resultContainer = document.getElementById('result-container');
+    resultContainer.innerText = `Selected Number: ${currentNumber}`;
+   }
 }
 
-var element = document.getElementById('even');
-element.classList.remove('animate');
 
-setTimeout(function() {
-    element.classList.add('animate');
-}, 5000);
+function saveNumber () {
+    if (currentNumber !== null) {
+        const numberSlots = document.querySelectorAll('.number-slot');
+        for (const slot of numberSlots) {
+            if (slot.innerText === '') {
+                slot.innerText = currentNumber;
+                break;
+            }
+        }
+
+        document.querySelector('.spin').disabled = false;
+    }
+}
+
+
+// need to make the wheel spin after each time the spin button is pressed
+// maybe like reset the spin or something
+

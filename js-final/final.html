@@ -9,25 +9,48 @@
 <h1>Spin the wheel to input your phone number</h1>
 <body>
 
-<div id="stripe" class ="stripe">
-  <div id="numbers" class="numbers">
-    <div class="even">
-      <span class="span1">0</span>
-      <span class="span2">2</span>
-      <span class="span3">4</span>
-      <span class="span4">6</span>
-      <span class="span5">8</span>
-    </div>
-    <div class="odd">
-      <span class="span6">1</span>
-      <span class="span7">3</span>
-      <span class="span8">5</span>
-      <span class="span9">7</span>
-      <span class="span10">9</span>
-    </div>
+<div id="spin-container">
+
+<div id ="numbers">
+  <img src="wheel.png" alt="wheel" class="wheel">
+</div>
+
+<!-- <div id="spin-container">
+  <div id="stripes">
+  <div id="numbers">
+    <div class="stripe">0</div>
+    <div class="stripe">1</div>
+    <div class="stripe">2</div>
+    <div class="stripe">3</div>
+    <div class="stripe">4</div>
+    <div class="stripe">5</div>
+    <div class="stripe">6</div>
+    <div class="stripe">7</div>
+    <div class="stripe">8</div>
+    <div class="stripe">9</div>
   </div>
-  <button class="spin" onclick="rotateFunction()">Spin</button>
-  <!-- <button class="save" onclick="?????">Save</button> -->
+</div>
+-->
+
+<div id="number-container">
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+    <div class="number-slot"></div>
+</div>
+
+
+<div id="result-container"></div>
+
+<button class="spin" onclick="spinWheel()">Spin</button>
+<button class="save" onclick="saveNumber()">Save</button>
+
+
 </div>
 
 
