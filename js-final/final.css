@@ -1,10 +1,3 @@
-/* maybe add a save or enter button */
-/* need 9 blank spaces for the numbers */
-/* numbers will be saved on screen when save button is pressed */
-/* then it will move to the right to complete the line */
-/* numbers will range from 0 to 9 --- make them random when spin is pressed */
-/* when phone number is input as desired, have another screen pop up or something (scary clown?) */
-
 
 h1 {
   font-size: 40px;
@@ -23,11 +16,11 @@ h1 {
 
 body {
     background-color: lightblue;
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: center;
-   /*  justify-content: center; */
+    justify-content: center;
+
 
     height: 100vh;
     margin: 0;
@@ -36,11 +29,10 @@ body {
 
 /* #stripes { */
 #wheel-container {
- /*  position: absolute; */
   align-items: center;
   display: flex;
+  grid-template-columns: 0 0 0 0;
   justify-content: center;
-
 
   /* animation-name: rotate;
   animation-duration: 5s;
@@ -61,8 +53,10 @@ body {
 .wheel {
   position: absolute;
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
+  margin: auto;
+
 
   top: 150px;
   width: 300px;
@@ -88,20 +82,13 @@ body {
     cursor: pointer;
   
     position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .submit {
-    /* position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+    position: absolute;
 
     top: 70%;
     left: 80%;
@@ -120,14 +107,14 @@ body {
   }
   
   .spin {
-    /* position: absolute; */
-  display: flex;
-  text-align: center;
-  /* justify-content: center; */
-  margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    margin: auto;
+    
     top: 280px;
     left: 205px;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%); 
   
     width: 50px;
     height: 50px;
@@ -148,7 +135,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+   
+
     top: 44%;
     left: 75%;
     transform: translate(-50%, -50%);
@@ -166,10 +154,10 @@ body {
   
   
   .reset {
-    position: fixed;
-    /* display: grid;
-    align-items: center; */
+    display: flex;
+    align-items: center;
     justify-content: center;
+
     top: 44%;
     left: 90%;
     transform: translate(-50%, -50%);
