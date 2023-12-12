@@ -14,7 +14,7 @@ h1 {
   align-items: center;
   top: 30px;
   margin: 0;
-  border: 4px solid black;
+  border: 2px solid blanchedalmond;
   background-color: red;
 }
 
@@ -32,7 +32,24 @@ body {
 #wheel-container {
   position: absolute;
   align-items: center;
+  display: flex;
+
+  /* added in class
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  */
 }
+
+/* added in class 
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+*/
+
 
 /* #numbers { */
 .wheel {
@@ -42,22 +59,19 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  animation: spin 5s ease-out 1 forwards;
-  /* background: conic-gradient(
-      from 0deg,
-      red 0deg 18deg,
-      white 18deg 36deg,
-      red 36deg 54deg,
-      white 54deg 72deg,
-      red 72deg 90deg,
-      white 90deg 108deg,
-      red 108deg 126deg,
-      white 126deg 144deg,
-      red 162deg 180deg,
-      white 180deg 198deg
-    );
-    */
+
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
   }
+
+  @keyframes rotate {
+    from{ transform: rotate(-360deg);}
+    to{ transform: rotate(360deg);}
+  }
+  
 
 #result-container {
   font-size: 20px;
@@ -92,12 +106,24 @@ button {
   display: absolute;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
+/* .submit {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 500px;
+  border-radius: 50%;
+  border: 4px solid lightblue;
+  background-color: blanchedalmond;
+  color: black;
+  box-shadow: 0 5px 20px black;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+}
+*/
 
 .spin {
   position: absolute;
@@ -114,7 +140,10 @@ button {
   font-weight: bold;
   font-size: 10px;
   cursor: pointer;
+
 }
+
+
 
 .save {
   position: absolute;
