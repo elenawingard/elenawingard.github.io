@@ -46,3 +46,4 @@ function saveNumber () {
 // need to make the wheel spin after each time the spin button is pressed
 // maybe like reset the spin or something
 
+//function reset () {

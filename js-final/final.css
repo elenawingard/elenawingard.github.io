@@ -11,18 +11,24 @@ h1 {
   color: white;
   letter-spacing: -1px;
   position: absolute;
+  display: flex;
   align-items: center;
+  justify-content: center;
   top: 30px;
   margin: 0;
   border: 2px solid blanchedalmond;
   background-color: red;
+  box-shadow: 0px 5px 10px white;
 }
 
 body {
     background-color: lightblue;
+    /* position: absolute; */
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
+   /*  justify-content: center; */
+
     height: 100vh;
     margin: 0;
     overflow: hidden;
@@ -30,12 +36,13 @@ body {
 
 /* #stripes { */
 #wheel-container {
-  position: absolute;
+ /*  position: absolute; */
   align-items: center;
   display: flex;
+  justify-content: center;
 
-  /* added in class
-  animation-name: rotate;
+
+  /* animation-name: rotate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -50,11 +57,13 @@ body {
 }
 */
 
-
 /* #numbers { */
 .wheel {
   position: absolute;
+  display: flex;
   align-items: center;
+  justify-content: center;
+
   top: 150px;
   width: 300px;
   height: 300px;
@@ -72,6 +81,109 @@ body {
     to{ transform: rotate(360deg);}
   }
   
+  button {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 0px;
+    cursor: pointer;
+  
+    position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .submit {
+    /* position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  display: flex;
+  flex-direction: column;
+text-align: center;
+
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    border: 4px solid lightblue;
+    background-color: blanchedalmond;
+    color: red;
+    box-shadow: 0px 5px 10px white;
+    font-weight: bold;
+    font-size: 7px;
+    cursor: pointer;
+  }
+  
+  .spin {
+    position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+    top: 280px;
+    left: 205px;
+    /* transform: translate(-50%, -50%); */
+  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid lightblue;
+    background-color: blanchedalmond;
+    color: red;
+    box-shadow: 0px 5px 10px white;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+  
+  }
+  
+  
+  .save {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    top: 44%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    border: 4px solid lightblue;
+    background-color: blanchedalmond;
+    color: red;
+    box-shadow: 0px 5px 10px white;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  
+  
+  .reset {
+    position: fixed;
+    /* display: grid;
+    align-items: center; */
+    justify-content: center;
+    top: 44%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    border: 4px solid lightblue;
+    background-color: blanchedalmond;
+    box-shadow: 0px 5px 10px white;
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+  }
 
 #result-container {
   font-size: 20px;
@@ -91,77 +203,14 @@ body {
   height: 30px;
   margin: 0 5px;
   background-color: blanchedalmond;
+  font-size: 14px;
+  border: 2px solid red;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
 }
 
-button {
-  margin-top: 20px;
-  font-size: 16px;
-  padding: 0px;
-  cursor: pointer;
-  align-items: center;
-  display: absolute;
-}
-
-
-/* .submit {
-  position: absolute;
-  top: 0%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 500px;
-  border-radius: 50%;
-  border: 4px solid lightblue;
-  background-color: blanchedalmond;
-  color: black;
-  box-shadow: 0 5px 20px black;
-  font-weight: bold;
-  font-size: 10px;
-  cursor: pointer;
-}
-*/
-
-.spin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid lightblue;
-  background-color: blanchedalmond;
-  color: black;
-  box-shadow: 0 5px 20px black;
-  font-weight: bold;
-  font-size: 10px;
-  cursor: pointer;
-
-}
-
-
-
-.save {
-  position: absolute;
-  align-items: center;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 4px solid lightblue;
-  background-color: blanchedalmond;
-  color: black;
-  box-shadow: 0 5px 20px black;
-  font-weight: bold;
-  font-size: 22px;
-  cursor: pointer;
-}
 
 
 /* .stripe {
