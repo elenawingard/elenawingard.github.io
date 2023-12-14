@@ -1,6 +1,5 @@
-// other idea: every time someone tries to type a number x, have it return x + 1, etc.
+//change the placement of the buttons
 
-// or do "pick a random box"
 
 let currentNumber = null;
 
@@ -16,7 +15,7 @@ function spinWheel () {
     // numbers.style.animation = `spin 5s ease-out 1 `;
     // numbers.style.transform = `rotate(${finalRotation}deg)`;
 
-//  make it spin every time the spin button is clicked
+
 
     currentNumber = Math.floor((finalRotation % 360) / 36);
 
