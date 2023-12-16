@@ -15,7 +15,9 @@ function spinWheel () {
     // numbers.style.animation = `spin 5s ease-out 1 `;
     // numbers.style.transform = `rotate(${finalRotation}deg)`;
 
-
+// restart the spin when button is pressed
+// when pressed { numbers.style.animation = `spin 5s ease-out 1 `;}
+// when pressed { numbers.style.transform = `rotate(${finalRotation}deg)`};
 
     currentNumber = Math.floor((finalRotation % 360) / 36);
 
