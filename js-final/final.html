@@ -3,34 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Number Carnival</title>
+    <title>Phone (Random) Number</title>
     <link rel="stylesheet" href="final.css">
 </head>
-<h1>Spin the wheel to input your phone number</h1>
-<body>
 
+<body>
+  <h1>Click “Select” to see what digit is picked. </h1>
+<p> The wheel is constantly spinning so random numbers are continuously being generated!</p>
 <div id="spin-container">
 
 <div id ="numbers">
   <img src="wheel.png" alt="wheel" class="wheel">
 </div>
-
-<!-- <div id="spin-container">
-  <div id="stripes">
-  <div id="numbers">
-    <div class="stripe">0</div>
-    <div class="stripe">1</div>
-    <div class="stripe">2</div>
-    <div class="stripe">3</div>
-    <div class="stripe">4</div>
-    <div class="stripe">5</div>
-    <div class="stripe">6</div>
-    <div class="stripe">7</div>
-    <div class="stripe">8</div>
-    <div class="stripe">9</div>
-  </div>
-</div>
--->
 
 <div id="number-container">
     <div class="number-slot"></div>
@@ -44,18 +28,13 @@
     <div class="number-slot"></div>
 </div>
 
-
 <div id="result-container"></div>
 
-<button class="spin" onclick="spinWheel()">Spin</button>
+<button class="spin" onclick="spinWheel()">Select</button>
 <button class="save" onclick="saveNumber()">Save</button>
 <button class="submit" onclick="submit()">Submit Phone Number</button>
-<button class="reset" onclick="reset()">Reset Choice</button>
-<!-- make the submit button do something -->
-
 
 </div>
-
 
     <script src="final.js"></script>
 </body>
