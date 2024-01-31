@@ -1,0 +1,97 @@
+/* contents:
+photo
+introduction
+different tabs
+*/
+
+* {
+    margin: 5;
+    padding: 5;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+.background {
+    background: #01366e;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    align-items: right;
+    gap: 10vw;
+    list-style: none;
+    font-size: 1vw;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+    padding: 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+}
+
+#search {
+    padding: 3px;
+    font-size: 17px;
+    border: 2px solid #01366e;
+    border-radius: 9px;
+}
+
+
+
+body {
+    background-color: white;
+}
+
+
+
+p {
+    font-size: 10vw;;
+    color: #01366e;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
