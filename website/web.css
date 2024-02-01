@@ -2,7 +2,26 @@
 photo
 introduction
 different tabs
+fun fonts
 */
+
+@font-face {
+    font-family: 'batheyregular';
+    src: url('https://elenawingard.me/website/web.css/fonts/bathey.woff2') format('woff2'),
+         url('bathey-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 5;
@@ -33,6 +52,7 @@ different tabs
     gap: 10vw;
     list-style: none;
     font-size: 1vw;
+    font-style: italic;
 }
 
 .nav-list li {
@@ -73,11 +93,9 @@ body {
 p {
     font-size: 10vw;;
     color: #01366e;
-    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 
