@@ -7,16 +7,13 @@ fun fonts
 
 @font-face {
     font-family: "batheyregular";
-    src: url("https://elenawingard.me/website/elenawingard.html/css/fonts/batheyregular.woff2") format("woff2"),
-         url("https://elenawingard.me/website/elenawingard.html/css/fonts/batheyregular.woff") format("woff");
+    src: url("https://elenawingard.github.io/css/fonts/batheyregular.woff2") format("woff2"),
+         url("https://elenawingard.github.io/css/fonts/batheyregular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
 }
 
-p {
-    font-family: 'batheyregular';
-}
 
 * {
     margin: 5;
@@ -81,6 +78,7 @@ p {
 
 body {
     background-color: white;
+    font-family: 'batheyregular';
 }
 
 
