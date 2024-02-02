@@ -5,7 +5,7 @@ pictures: me, home, boulder
 
 @font-face {
     font-family: "batheyregular";
-    src: /* url('https://elenawingard.me/website/elenawingard.html/batheyregular.woff2') format('woff2'),*/
+    src: url("https://elenawingard.me/website/elenawingard.html/batheyregular.woff2") format("woff2"),
          url("https://elenawingard.me/website/elenawingard.html/batheyregular.woff") format("woff");
     font-weight: normal;
     font-style: normal;

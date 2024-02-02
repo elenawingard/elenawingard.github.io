@@ -6,9 +6,9 @@ fun fonts
 */
 
 @font-face {
-    font-family: 'batheyregular';
-    src: /* url('https://elenawingard.me/website/elenawingard.html/batheyregular.woff2') format('woff2'),*/
-         url('https://elenawingard.me/website/elenawingard.html/batheyregular.woff') format('woff');
+    font-family: "batheyregular";
+    src: url("https://elenawingard.me/website/elenawingard.html/batheyregular.woff2") format("woff2"),
+         url("https://elenawingard.me/website/elenawingard.html/batheyregular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
@@ -17,7 +17,6 @@ fun fonts
 p {
     font-family: 'batheyregular';
 }
-
 
 * {
     margin: 5;
