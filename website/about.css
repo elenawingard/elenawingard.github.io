@@ -4,12 +4,18 @@ pictures: me, home, boulder
 */
 
 @font-face {
-    font-family: 'batheyregular';
-    src: url('bathey-webfont.woff2') format('woff2'),
-         url('bathey-webfont.woff') format('woff');
+    font-family: "batheyregular";
+    src: /* url('https://elenawingard.me/website/elenawingard.html/batheyregular.woff2') format('woff2'),*/
+         url("https://elenawingard.me/website/elenawingard.html/batheyregular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+
 }
+
+p {
+    font-family: "batheyregular";
+}
+
 
 .button {
     margin: 7px 0;
