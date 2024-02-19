@@ -3,6 +3,7 @@ photo
 introduction
 different tabs
 fun fonts
+linkedin link
 */
 
 @font-face {
@@ -13,7 +14,6 @@ fun fonts
     font-style: normal;
 
 }
-
 
 * {
     margin: 5;
