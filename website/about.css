@@ -15,35 +15,51 @@ pictures: me, home, boulder
 
 /* use javascript for buttons */
 
+header {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3vw;
+    background-color: #01366e;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3vw;
+    color: azure;
+}
+
+
 p {
     font-family: 'batheyregular';
+    font-size: 1.5vw;
 }
 
 
 .button {
-    margin: 7px 0;
+    margin: 0px 0;
     border: 2px solid #01366e;
     border-radius: 8px;
     background: none;
     color: #01366e;
     cursor: pointer;
-    padding: 6px 10px;
+    padding: 0px 10px;
     vertical-align: middle;
     height: 4vw;
     width: 3vw;
 }
 
 
+
 .firstsection {
     background-color: #01366e;
-    height: 400px;
-    padding: 1vw;
+    height: 15vw;
 
 }
 
 .secondsection {
     background-color: #01366e;
-    height: 400px;
+ 
 }
 
 .box-main {
@@ -54,4 +70,11 @@ p {
     max-width: 80%;
     margin: auto;
     height: 80%;
+}
+
+body {
+    background-color: white;
+    font-family: 'batheyregular';
+    background-image: url(toile.jpg);
+    background-size: 400px;
 }

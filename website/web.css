@@ -6,6 +6,16 @@ fun fonts
 linkedin link
 */
 
+/* wa.11 images from home */
+
+/*
+colors i like
+pinky: rgb(250, 87, 133)
+bluish: rgb(27, 83, 121)
+*/
+
+
+
 @font-face {
     font-family: "batheyregular";
     src: url("https://elenawingard.github.io/css/fonts/batheyregular.woff2") format("woff2"),
@@ -79,6 +89,8 @@ linkedin link
 body {
     background-color: white;
     font-family: 'batheyregular';
+    background-image: url(bluetoile.jpg);
+    background-size: 400px;
 }
 
 
